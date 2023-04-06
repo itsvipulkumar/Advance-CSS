@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+}
+.circle_clippath {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+   align-items: flex-start;
+    height: 100vh;
+    background-color: #3498db;
+    clip-path: polygon( 0 0, 100% 0, 100% 48%, 0 60%);
+    z-index: -1;
+}
+
+.circle_clippath .images{
+    /* display: flex;
+    justify-content: center;
+   align-items: center; */
+    margin-top: 100px;
+    border-radius: 8px;
+    height: 200px;
+    color: #fff;
+    width: 300px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,63,191,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.images .image{
+    clip-path: circle(20% at 0% 0% );
+    background-color: azure;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.image:hover{
+    clip-path: circle(75%);
+    background: #3498db;
+}

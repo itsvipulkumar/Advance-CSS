@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .outer_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: antiquewhite;
+      }
+      .outer_box div {
+        background-color: aqua;
+        padding: 50px;
+        border-radius: 10px;
+      }
+      .outer_box div {
+        animation: bgColorChange 10s linear infinite;
+        transition: 0.3s all ease-in-out;
+      }
+
+      @keyframes bgColorChange {
+        0% {
+          background-color: blue;
+        }
+        25% {
+          background-color: gray;
+        }
+        50% {
+          background-color: red;
+        }
+        75% {
+          background-color: #453173;
+        }
+        100% {
+          background-color: #913173;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer_box">
+      <div>
+        <h1>Hello Animation, haha!</h1>
+      </div>
+    </div>
+  </body>
+</html>
